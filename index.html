@@ -4,28 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Recipe.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap" rel="stylesheet">
     <title>Recipy Site</title>
 </head>
 <body>
+  
     <!-- <img src="C:\Users\user\Desktop\HTLM\recipe-page-main\assets\images\image-omelette.jpeg" alt=""> -->
+  <main> 
     <img src="./assets/images/image-omelette.jpeg" alt="">
     <header>
-      <h1> new Header File</h1>
-        <h1>Simple Omelette Recipe</h1>
-        <h4>An easy and quick dish, perfect for any meal. This classic omelette combines beaten eggs cooked 
-  to perfection, optionally filled with your choice of cheese, vegetables, or meats.</h4>
+        <h1 class="header">Simple Omelette Recipe</h1>
+        <p>An easy and quick dish, perfect for any meal. This classic omelette combines beaten eggs <br>
+           cooked to perfection, optionally filled with your choice of cheese, vegetables, or meats.</p>
     </header>  
-    <div>
+    <div class="Preparation">
         <p><strong>Preparation time</strong></p>
-        <ul>
+        <ul class="list-container">
             <li> <strong>Total:</strong>Approximately 10 minutes</li>
             <li><strong>Preparation:</strong> 5 minutes</li>
             <li><strong>Cooking:</strong> 5 minutes</li>
         </ul>
     </div>
     <div>
-        <p><strong>Ingredients</strong></p>
-        <ul>
+        <p class="label"><strong>Ingredients</strong></p>
+        <ul class="list-container">
             <li>2-3 large eggs</li>
             <li>Salt, to taste</li>
             <li>Pepper, to taste</li>
@@ -33,9 +37,10 @@
             <li>Optional fillings: cheese, diced vegetables, cooked meats, herbs</li>
         </ul>
     </div>
+    <hr>
     <div>
-        <p><strong>Instructions</strong> </p>
-        <ol>
+        <p class="label"><strong>Instructions</strong> </p>
+        <ol class="list-container">
             <li><strong>Beat the eggs:</strong> In a bowl, beat the eggs with a pinch of salt and pepper until they are well mixed. 
   You can add a tablespoon of water or milk for a fluffier texture.</li>
         <li><strong>Heat the pan:</strong> Place a non-stick frying pan over medium heat and add butter or oil.</li>
@@ -48,17 +53,16 @@
         <li><strong>Enjoy:</strong> Serve hot, with additional salt and pepper if needed.</li>
         </ol>
     </div>
-    <div>
-        <p><strong>Nutrition</strong></p>
-        <p>The table below shows nutritional values per serving without the additional fillings.</p>
+    <hr>
+    <section>
+      <div class="label"><strong>Nutrition</strong></div>
+      <p class="p">The table below shows nutritional values per serving without the additional fillings.</p>
         <table>
-            <thead>
-                <tr>
-                    <th>Calories</th>
-                    <th>277kcal</th>
-                </tr>
-            </thead>
             <tbody>
+                <tr>
+                    <td>Calories</td>
+                    <td>277kcal</td>
+                </tr>
                 <tr>
                     <td>Carbs</td>
                     <td>0g</td>
@@ -72,7 +76,7 @@
                 </tr>
             </tbody>
         </table>
-    </div>
-    
+    </section>
+  </main> 
 </body>
 </html>
